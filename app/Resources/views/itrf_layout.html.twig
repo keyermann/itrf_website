@@ -1,0 +1,31 @@
+{% extends 'SGNMaterialDesignInterfaceBundle:Dashboard:layout.html.twig' %}
+
+{% trans_default_domain 'itrf-layout' %}
+
+{% block html_lang app.request.locale %}
+{% block head_description 'head.description'|trans %}
+{% block head_author 'head.author'|trans %}
+
+{% block title 'mustchange'|trans %}
+
+{% block layout_title 'mustchange'|trans %}
+
+{% block header_searchfield %}{# TODO #}{% endblock header_searchfield %}
+
+{% block header_more_vert_li %}
+    {{ knp_menu_render('ItrfWebsiteBundle:MainBuilder:moreVertMenu', {'template': 'SGNMaterialDesignInterfaceBundle:KnpMenu:li.html.twig'}) }}
+{% endblock %}
+
+{% block drawer_header %}
+    <img src="{{ asset('images/itrf.png') }}" class="mdi-logo">
+{% endblock %}
+
+{% block drawer_navigation %}
+    {{ knp_menu_render('ItrfWebsiteBundle:MainBuilder:mainMenu', {'template': 'SGNMaterialDesignInterfaceBundle:KnpMenu:a.html.twig', 'allow_safe_labels': true}) }}
+{% endblock drawer_navigation %}
+
+{% block grid_content %}
+{% endblock grid_content %}
+
+{% block complement %}
+{% endblock complement %}
