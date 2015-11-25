@@ -4,9 +4,37 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ae083094f2940a0de43a6f3191eaf2ff",
-    "content-hash": "31a3117f03ae45478274799133a163fb",
+    "hash": "5b74de545f0f3ad656f2cc10caa6e28b",
+    "content-hash": "b59b2bab88edf0731551c9d7d8f3c88f",
     "packages": [
+        {
+            "name": "bdgs/workflow-bundle",
+            "version": "dev-feature-nodep",
+            "target-dir": "BDGS/WorkflowBundle",
+            "source": {
+                "type": "git",
+                "url": "git@devsgn.ign.fr:bdgs/WorkflowBundle.git",
+                "reference": "e1ac399c7c3d44e9923baf528e9b73a2b39540a2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "BDGS\\WorkflowBundle": ""
+                }
+            },
+            "authors": [
+                {
+                    "name": "Armelle Cogent",
+                    "email": "armelle.cogent@ign.fr"
+                },
+                {
+                    "name": "Kévin Eyermann",
+                    "email": "kevin.eyermann@ign.fr"
+                }
+            ],
+            "description": "Bundle de gestion des flux (GDF) BDGS => Base cliente",
+            "time": "2015-11-25 14:37:52"
+        },
         {
             "name": "doctrine/annotations",
             "version": "v1.2.7",
@@ -770,6 +798,73 @@
             "time": "2015-11-23 12:44:25"
         },
         {
+            "name": "friendsofsymfony/user-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
+                "reference": "45d6f40178216a840885b4ca6d7de9e67068568a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/45d6f40178216a840885b4ca6d7de9e67068568a",
+                "reference": "45d6f40178216a840885b4ca6d7de9e67068568a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9",
+                "symfony/form": "~2.3",
+                "symfony/framework-bundle": "~2.3",
+                "symfony/security-bundle": "~2.3",
+                "symfony/twig-bundle": "~2.3"
+            },
+            "require-dev": {
+                "doctrine/doctrine-bundle": "~1.3",
+                "swiftmailer/swiftmailer": "~4.3|~5",
+                "symfony/validator": "~2.3",
+                "symfony/yaml": "~2.3",
+                "willdurand/propel-typehintable-behavior": "~1.0"
+            },
+            "suggest": {
+                "willdurand/propel-typehintable-behavior": "Needed when using the propel implementation"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FOS\\UserBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christophe Coevoet",
+                    "email": "stof@notk.org"
+                },
+                {
+                    "name": "FriendsOfSymfony Community",
+                    "homepage": "https://github.com/friendsofsymfony/FOSUserBundle/contributors"
+                },
+                {
+                    "name": "Thibault Duplessis",
+                    "email": "thibault.duplessis@gmail.com"
+                }
+            ],
+            "description": "Symfony FOSUserBundle",
+            "homepage": "http://friendsofsymfony.github.com",
+            "keywords": [
+                "User management"
+            ],
+            "time": "2015-11-03 10:24:23"
+        },
+        {
             "name": "incenteev/composer-parameter-handler",
             "version": "v2.1.2",
             "source": {
@@ -911,6 +1006,128 @@
                 "sql"
             ],
             "time": "2014-01-12 16:20:24"
+        },
+        {
+            "name": "knplabs/knp-menu",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KnpLabs/KnpMenu.git",
+                "reference": "c6ad49933babd06a27b2f962a3469601ec9038b8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KnpLabs/KnpMenu/zipball/c6ad49933babd06a27b2f962a3469601ec9038b8",
+                "reference": "c6ad49933babd06a27b2f962a3469601ec9038b8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "pimple/pimple": "~1.0",
+                "silex/silex": "~1.0",
+                "symfony/phpunit-bridge": "~2.7",
+                "twig/twig": "~1.16|~2.0"
+            },
+            "suggest": {
+                "pimple/pimple": "for the built-in implementations of the menu provider and renderer provider",
+                "silex/silex": "for the integration with your silex application",
+                "twig/twig": "for the TwigRenderer and the integration with your templates"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Knp\\Menu\\": "src/Knp/Menu"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christophe Coevoet",
+                    "email": "stof@notk.org"
+                },
+                {
+                    "name": "KnpLabs",
+                    "homepage": "http://knplabs.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://github.com/KnpLabs/KnpMenu/contributors"
+                }
+            ],
+            "description": "An object oriented menu library",
+            "homepage": "http://knplabs.com",
+            "keywords": [
+                "menu",
+                "tree"
+            ],
+            "time": "2015-09-20 08:23:47"
+        },
+        {
+            "name": "knplabs/knp-menu-bundle",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KnpLabs/KnpMenuBundle.git",
+                "reference": "2246a70109bdd313a105d2a7ef464a763aacf0cd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KnpLabs/KnpMenuBundle/zipball/2246a70109bdd313a105d2a7ef464a763aacf0cd",
+                "reference": "2246a70109bdd313a105d2a7ef464a763aacf0cd",
+                "shasum": ""
+            },
+            "require": {
+                "knplabs/knp-menu": "~2.1",
+                "symfony/framework-bundle": "~2.3"
+            },
+            "require-dev": {
+                "symfony/expression-language": "~2.4",
+                "symfony/phpunit-bridge": "~2.7"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Knp\\Bundle\\MenuBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christophe Coevoet",
+                    "email": "stof@notk.org"
+                },
+                {
+                    "name": "Knplabs",
+                    "homepage": "http://knplabs.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://github.com/KnpLabs/KnpMenuBundle/contributors"
+                }
+            ],
+            "description": "This bundle provides an integration of the KnpMenu library",
+            "keywords": [
+                "menu"
+            ],
+            "time": "2015-09-28 15:23:54"
         },
         {
             "name": "monolog/monolog",
@@ -1081,12 +1298,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioDistributionBundle.git",
-                "reference": "f48d77dcb3023577eb54f6901a27af025d6a313e"
+                "reference": "b6fd439d2afe45f8f73981e8bf9ff5d2891c0830"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/f48d77dcb3023577eb54f6901a27af025d6a313e",
-                "reference": "f48d77dcb3023577eb54f6901a27af025d6a313e",
+                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/b6fd439d2afe45f8f73981e8bf9ff5d2891c0830",
+                "reference": "b6fd439d2afe45f8f73981e8bf9ff5d2891c0830",
                 "shasum": ""
             },
             "require": {
@@ -1125,7 +1342,7 @@
                 "configuration",
                 "distribution"
             ],
-            "time": "2015-11-16 12:45:35"
+            "time": "2015-11-25 12:53:32"
         },
         {
             "name": "sensio/framework-extra-bundle",
@@ -1225,6 +1442,37 @@
             ],
             "description": "A security checker for your composer.lock",
             "time": "2015-11-07 08:07:40"
+        },
+        {
+            "name": "sgn/md-interface-bundle",
+            "version": "v1.1.1",
+            "target-dir": "SGN/MaterialDesignInterfaceBundle",
+            "source": {
+                "type": "git",
+                "url": "git@devsgn.ign.fr:sgn/md-interface.git",
+                "reference": "155f3162fe39bdd952c490493de9fe5be0263ebe"
+            },
+            "require": {
+                "friendsofsymfony/user-bundle": "~2.0@dev",
+                "knplabs/knp-menu-bundle": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "SGN\\MaterialDesignInterfaceBundle": ""
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Eyermann",
+                    "email": "kevin.eyermann@ign.fr"
+                }
+            ],
+            "description": "Inteface Material Design pour sites Symfony2",
+            "time": "2015-11-25 11:54:06"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -1853,12 +2101,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "e0f5ffc30458c4407fa480e03570e7e72aa58caa"
+                "reference": "1abfecf5ca966c6e87551dddb0f697b3e6b0414a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/e0f5ffc30458c4407fa480e03570e7e72aa58caa",
-                "reference": "e0f5ffc30458c4407fa480e03570e7e72aa58caa",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/1abfecf5ca966c6e87551dddb0f697b3e6b0414a",
+                "reference": "1abfecf5ca966c6e87551dddb0f697b3e6b0414a",
                 "shasum": ""
             },
             "require": {
@@ -1978,7 +2226,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2015-11-24 07:33:26"
+            "time": "2015-11-25 12:13:51"
         },
         {
             "name": "twig/twig",
@@ -2155,7 +2403,9 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "symfony/symfony": 20,
-        "sensio/distribution-bundle": 20
+        "sensio/distribution-bundle": 20,
+        "friendsofsymfony/user-bundle": 20,
+        "bdgs/workflow-bundle": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

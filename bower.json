@@ -1,0 +1,25 @@
+{
+  "name": "ITRF",
+  "authors": [
+    "Kevin Eyermann <kevin.eyermann@ign.fr>"
+  ],
+  "description": "Dépendances frontend pour le site ITRF",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "web/assets/vendor/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "material-design-lite": "~1.0.6",
+    "material-design-icons": "~2.1.1",
+    "roboto": "https://google-fonts.azurewebsites.net/googleFonts/roboto?family=Roboto:300,400,500,700"
+  }
+}

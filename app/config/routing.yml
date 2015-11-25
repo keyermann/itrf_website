@@ -1,3 +1,34 @@
-app:
-    resource: "@AppBundle/Controller/"
+itrf_website:
+    resource: "@ItrfWebsiteBundle/Controller/"
     type:     annotation
+    prefix:   /{_locale}
+    defaults:
+        _locale: "%locale%"
+    requirements:
+        _locale: en|fr
+
+_welcome:
+    pattern:  /
+    defaults:
+        _controller: FrameworkBundle:Redirect:urlRedirect
+        path: /%locale%/
+        permanent: true
+
+bdgs_workflow:
+    resource: "@BDGSWorkflowBundle/Controller/"
+    type:     annotation
+    prefix:   /{_locale}/admin
+    defaults:
+        _locale: "%locale%"
+    requirements:
+        _locale: en|fr
+
+
+# Les routes FOSUser (login, logout, change-password, register, ...)
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+# Les routes d'administration des utilisateurs
+admin_user:
+    resource: "@SGNMaterialDesignInterfaceBundle/Resources/config/routing/admin_users.yml"
+    prefix:   /admin
