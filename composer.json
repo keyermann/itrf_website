@@ -23,7 +23,8 @@
 
         "friendsofsymfony/user-bundle": "~2.0@dev",
 
-        "sgn/md-interface-bundle": "~1.1"
+        "sgn/md-interface-bundle": "~1.1",
+        "bdgs/workflow-bundle": "dev-feature-nodep"
     },
     "require-dev": {
         "sensio/generator-bundle": "~3.0",

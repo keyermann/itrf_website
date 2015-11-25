@@ -4,9 +4,37 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c3bb89b3cfc5b80e557a1db13d9b320f",
-    "content-hash": "2ba7f5950f7de2f86b85f568f07b7e54",
+    "hash": "5b74de545f0f3ad656f2cc10caa6e28b",
+    "content-hash": "b59b2bab88edf0731551c9d7d8f3c88f",
     "packages": [
+        {
+            "name": "bdgs/workflow-bundle",
+            "version": "dev-feature-nodep",
+            "target-dir": "BDGS/WorkflowBundle",
+            "source": {
+                "type": "git",
+                "url": "git@devsgn.ign.fr:bdgs/WorkflowBundle.git",
+                "reference": "e1ac399c7c3d44e9923baf528e9b73a2b39540a2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "BDGS\\WorkflowBundle": ""
+                }
+            },
+            "authors": [
+                {
+                    "name": "Armelle Cogent",
+                    "email": "armelle.cogent@ign.fr"
+                },
+                {
+                    "name": "Kévin Eyermann",
+                    "email": "kevin.eyermann@ign.fr"
+                }
+            ],
+            "description": "Bundle de gestion des flux (GDF) BDGS => Base cliente",
+            "time": "2015-11-25 14:37:52"
+        },
         {
             "name": "doctrine/annotations",
             "version": "v1.2.7",
@@ -1417,12 +1445,12 @@
         },
         {
             "name": "sgn/md-interface-bundle",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "target-dir": "SGN/MaterialDesignInterfaceBundle",
             "source": {
                 "type": "git",
                 "url": "git@devsgn.ign.fr:sgn/md-interface.git",
-                "reference": "0df5dc5e2c461e0f37b7910dcd979b20aea652aa"
+                "reference": "155f3162fe39bdd952c490493de9fe5be0263ebe"
             },
             "require": {
                 "friendsofsymfony/user-bundle": "~2.0@dev",
@@ -2376,7 +2404,8 @@
     "stability-flags": {
         "symfony/symfony": 20,
         "sensio/distribution-bundle": 20,
-        "friendsofsymfony/user-bundle": 20
+        "friendsofsymfony/user-bundle": 20,
+        "bdgs/workflow-bundle": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
