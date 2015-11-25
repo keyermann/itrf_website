@@ -23,7 +23,7 @@
 
         "friendsofsymfony/user-bundle": "~2.0@dev",
 
-        "sgn/md-interface-bundle": "~1.0"
+        "sgn/md-interface-bundle": "~1.1"
     },
     "require-dev": {
         "sensio/generator-bundle": "~3.0",

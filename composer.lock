@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ffc09911a025c2b92b6a359bed65df14",
-    "content-hash": "55500bc175a406e59ec02d0713415619",
+    "hash": "c3bb89b3cfc5b80e557a1db13d9b320f",
+    "content-hash": "2ba7f5950f7de2f86b85f568f07b7e54",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -837,28 +837,6 @@
             "time": "2015-11-03 10:24:23"
         },
         {
-            "name": "google/material-design-icons",
-            "version": "2.1",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/google/material-design-icons/releases/download/2.1/material-design-icons-2.1.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "library"
-        },
-        {
-            "name": "google/material-design-lite",
-            "version": "1.0.6",
-            "dist": {
-                "type": "zip",
-                "url": "https://storage.googleapis.com/code.getmdl.io/1.0.6/mdl.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "library"
-        },
-        {
             "name": "incenteev/composer-parameter-handler",
             "version": "v2.1.2",
             "source": {
@@ -1292,12 +1270,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioDistributionBundle.git",
-                "reference": "a84f4c0fa9ce9791e408a6a013b71e69a6e89282"
+                "reference": "b6fd439d2afe45f8f73981e8bf9ff5d2891c0830"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/a84f4c0fa9ce9791e408a6a013b71e69a6e89282",
-                "reference": "a84f4c0fa9ce9791e408a6a013b71e69a6e89282",
+                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/b6fd439d2afe45f8f73981e8bf9ff5d2891c0830",
+                "reference": "b6fd439d2afe45f8f73981e8bf9ff5d2891c0830",
                 "shasum": ""
             },
             "require": {
@@ -1336,7 +1314,7 @@
                 "configuration",
                 "distribution"
             ],
-            "time": "2015-11-24 20:13:56"
+            "time": "2015-11-25 12:53:32"
         },
         {
             "name": "sensio/framework-extra-bundle",
@@ -1439,17 +1417,15 @@
         },
         {
             "name": "sgn/md-interface-bundle",
-            "version": "v1.0.0",
+            "version": "v1.1.0",
             "target-dir": "SGN/MaterialDesignInterfaceBundle",
             "source": {
                 "type": "git",
                 "url": "git@devsgn.ign.fr:sgn/md-interface.git",
-                "reference": "507d15b2f2ce47013e248632b38798e76b134927"
+                "reference": "0df5dc5e2c461e0f37b7910dcd979b20aea652aa"
             },
             "require": {
                 "friendsofsymfony/user-bundle": "~2.0@dev",
-                "google/material-design-icons": "~2.1",
-                "google/material-design-lite": "~1.0,>=1.0.6",
                 "knplabs/knp-menu-bundle": "~2.0"
             },
             "type": "library",
@@ -1468,7 +1444,7 @@
                 }
             ],
             "description": "Inteface Material Design pour sites Symfony2",
-            "time": "2015-11-24 10:29:40"
+            "time": "2015-11-25 11:54:06"
         },
         {
             "name": "swiftmailer/swiftmailer",
