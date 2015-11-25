@@ -12,3 +12,7 @@ _errors:
 
 _main:
     resource: routing.yml
+
+# Cet élément permet simplement d'accéder à une page exemple /material-design-interface
+mdi:
+    resource: "@SGNMaterialDesignInterfaceBundle/Resources/config/routing/mdi.yml"
