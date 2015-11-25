@@ -33,28 +33,6 @@
         {
             "type": "composer",
             "url": "http://devsgn.ign.fr:8080/"
-        },
-        {
-           "type": "package",
-           "package": {
-               "name": "google/material-design-lite",
-               "version": "1.0.6",
-               "dist": {
-                   "type": "zip",
-                   "url": "https://storage.googleapis.com/code.getmdl.io/1.0.6/mdl.zip"
-               }
-           }
-        },
-        {
-           "type": "package",
-           "package": {
-               "name": "google/material-design-icons",
-               "version": "2.1",
-               "dist": {
-                   "type": "zip",
-                   "url": "https://github.com/google/material-design-icons/releases/download/2.1/material-design-icons-2.1.zip"
-               }
-           }
         }
     ],
     "scripts": {
@@ -64,7 +42,8 @@
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget"
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget",
+            "bower install"
         ],
         "post-update-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
@@ -72,7 +51,8 @@
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget"
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget",
+            "bower update"
         ]
     },
     "config": {

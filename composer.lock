@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "94b0a94b05531eb3215c4fd024f2b273",
-    "content-hash": "7732c580f3ae9f52d2297a0e44160fde",
+    "hash": "ffc09911a025c2b92b6a359bed65df14",
+    "content-hash": "55500bc175a406e59ec02d0713415619",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1292,12 +1292,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioDistributionBundle.git",
-                "reference": "f48d77dcb3023577eb54f6901a27af025d6a313e"
+                "reference": "a84f4c0fa9ce9791e408a6a013b71e69a6e89282"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/f48d77dcb3023577eb54f6901a27af025d6a313e",
-                "reference": "f48d77dcb3023577eb54f6901a27af025d6a313e",
+                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/a84f4c0fa9ce9791e408a6a013b71e69a6e89282",
+                "reference": "a84f4c0fa9ce9791e408a6a013b71e69a6e89282",
                 "shasum": ""
             },
             "require": {
@@ -1336,7 +1336,7 @@
                 "configuration",
                 "distribution"
             ],
-            "time": "2015-11-16 12:45:35"
+            "time": "2015-11-24 20:13:56"
         },
         {
             "name": "sensio/framework-extra-bundle",
@@ -2097,12 +2097,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "e0f5ffc30458c4407fa480e03570e7e72aa58caa"
+                "reference": "1abfecf5ca966c6e87551dddb0f697b3e6b0414a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/e0f5ffc30458c4407fa480e03570e7e72aa58caa",
-                "reference": "e0f5ffc30458c4407fa480e03570e7e72aa58caa",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/1abfecf5ca966c6e87551dddb0f697b3e6b0414a",
+                "reference": "1abfecf5ca966c6e87551dddb0f697b3e6b0414a",
                 "shasum": ""
             },
             "require": {
@@ -2222,7 +2222,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2015-11-24 07:33:26"
+            "time": "2015-11-25 12:13:51"
         },
         {
             "name": "twig/twig",
