@@ -8,9 +8,23 @@
 
 {% block title 'mustchange'|trans %}
 
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        .mdi-navigation .mdl-navigation__link .material-icons {
+            margin-right: 22px;
+        }
+        .mdi-content {
+            max-width: 100%;
+        }
+    </style>
+{% endblock %}
+
 {% block layout_title 'mustchange'|trans %}
 
-{% block header_searchfield %}{# TODO #}{% endblock header_searchfield %}
+{% block header_searchfield %}{# TODO: Search DOMES #}
+    {{ parent() }}
+{% endblock header_searchfield %}
 
 {% block header_more_vert_li %}
     {{ knp_menu_render('ItrfWebsiteBundle:MainBuilder:moreVertMenu', {'template': 'SGNMaterialDesignInterfaceBundle:KnpMenu:li.html.twig'}) }}

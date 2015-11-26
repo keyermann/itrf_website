@@ -1,5 +1,21 @@
 {% extends 'itrf_layout.html.twig' %}
 
+{% trans_default_domain 'itrf-homepage' %}
+
+{% block title 'head.title'|trans %}
+
+{% block layout_title 'layout.title'|trans %}
+
 {% block grid_content %}
-    {{ dump(app.request) }}
+    {{ include('main/homepage/welcome.html.twig') }}
+
+    {# {{ include('main/homepage/map.html.twig') }}
+
+    {{ include('main/homepage/news.html.twig') }}
+
+    {{ include('main/homepage/tip.html.twig') }}
+
+    {{ include('main/homepage/general_concepts.html.twig') }}
+
+    {{ include('main/homepage/splinter_meeting.html.twig') }} #}
 {% endblock grid_content %}
