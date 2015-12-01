@@ -1,5 +1,6 @@
 {
     "name": "itrf/website",
+    "description": "Site web de l'ITRF",
     "license": "proprietary",
     "type": "project",
     "autoload": {

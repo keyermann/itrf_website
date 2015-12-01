@@ -4,8 +4,6 @@ namespace ItrfWebsiteBundle\Menu;
 
 use Knp\Menu\FactoryInterface;
 
-//use Symfony\Component\DependencyInjection\ContainerAwareTrait;
-
 /**
  * @SuppressWarnings(PHPMD.UnusedFormalParameter)
  */
@@ -16,7 +14,7 @@ class MainBuilder
     /**
      * @TODO
      */
-    public function moreVertMenu(FactoryInterface $factory, array $options)
+    public function moreVertMenu(FactoryInterface $factory)
     {
         $menu = $factory->createItem('more_vert');
 
@@ -63,7 +61,7 @@ class MainBuilder
     }
 
 
-    public function mainMenu(FactoryInterface $factory, array $options)
+    public function mainMenu(FactoryInterface $factory)
     {
         $menu = $factory->createItem('drawer');
 
@@ -160,6 +158,4 @@ class MainBuilder
 
         return $menu;
     }
-
-
 }

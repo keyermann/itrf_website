@@ -3,12 +3,14 @@
 # http://symfony.com/doc/current/best_practices/configuration.html#infrastructure-related-configuration
 parameters:
     database_host:          127.0.0.1
+    database_name:          database
     database_user:          root
     database_password:      ~
     # You should uncomment this if you want use pdo_sqlite
     # database_path: "%kernel.root_dir%/data.db3"
 
     bdgs_database_host:     127.0.0.1
+    bdgs_database_name:     bdgs_database
     bdgs_database_user:     root
     bdgs_database_password: ~
 
